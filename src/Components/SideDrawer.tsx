@@ -4,6 +4,10 @@ import { MdOutlineProductionQuantityLimits } from 'react-icons/md';
 import { GrTransaction } from 'react-icons/gr';
 import { MdManageAccounts } from 'react-icons/md';
 import { GrAnalytics } from 'react-icons/gr';
+import { IoMdClose } from "react-icons/io";
+import { useContext } from 'react';
+import { isOpenContext } from '../Pages/RootLayout';
+
 
 type menuType = {
     title: string;
@@ -39,15 +43,18 @@ const menus: menuType[] = [
 ];
 
 const SideDrawer = () => {
+    const {isOpen,handleMenu} = useContext(isOpenContext)
+
     return (
-        <div className='bg-black  text-white min-h-screen w-36 lg:w-48 '>
+        <div className={`bg-black md:static absolute text-white min-h-screen w-36 lg:w-48 md:flex transition-all duration-500 ease-in-out ${isOpen ? 'left-0' : '-left-36'} `}>
             <div className='pt-4 h-full'>
-                <div className='flex justify-center items-center '>
-                    <h1 className='font-bold'>
+                <div className='flex justify-between items-center '>
+                    <h1 className='font-bold md:text-base  text-sm'>
                         <span className='bg-orange-500 rounded-lg p-1 mx-1'>DP</span>DASH-PAL
                     </h1>
+                    <button className='bg-orange-500 rounded-md p-1 flex items-center justify-center mx-2 md:hidden ' onClick={()=>handleMenu()}>{<IoMdClose/>}</button>
                 </div>
-                <div className='flex justify-center items-center mt-4 w-full'>
+                <div className='flex justify-center  items-center mt-4 w-full'>
                     <ul className='w-full'>
                         {menus.map((data, index) => {
                             return (
