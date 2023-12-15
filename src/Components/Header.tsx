@@ -1,10 +1,10 @@
 import { CgDarkMode } from 'react-icons/cg';
 import { IoIosNotifications } from 'react-icons/io';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { isOpenContext } from '../Pages/RootLayout';
 const Header = () => {
-    const {isOpen,handleMenu} = useContext(isOpenContext);
+    const {isOpen,setIsopen} = useContext(isOpenContext);
     
    
     return (
@@ -12,7 +12,7 @@ const Header = () => {
             <div className='flex items-center justify-center ml-4'>
                 <button
                     className={`bg-orange-500 rounded-md p-1  items-center justify-center mx-2 md:hidden text-white ${isOpen? '-left-36':'left-0'}`}
-                    onClick={() => handleMenu()}
+                    onClick={() => setIsopen(!isOpen)}
                 >
                     {<GiHamburgerMenu />}
                 </button>

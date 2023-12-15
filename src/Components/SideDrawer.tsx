@@ -43,7 +43,7 @@ const menus: menuType[] = [
 ];
 
 const SideDrawer = () => {
-    const {isOpen,handleMenu} = useContext(isOpenContext)
+    const {isOpen,setIsopen} = useContext(isOpenContext)
 
     return (
         <div className={`bg-black md:static absolute text-white min-h-screen w-36 lg:w-48 md:flex transition-all duration-500 ease-in-out ${isOpen ? 'left-0' : '-left-36'} `}>
@@ -52,7 +52,7 @@ const SideDrawer = () => {
                     <h1 className='font-bold md:text-base  text-sm'>
                         <span className='bg-orange-500 rounded-lg p-1 mx-1'>DP</span>DASH-PAL
                     </h1>
-                    <button className='bg-orange-500 rounded-md p-1 flex items-center justify-center mx-2 md:hidden ' onClick={()=>handleMenu()}>{<IoMdClose/>}</button>
+                    <button className='bg-orange-500 rounded-md p-1 flex items-center justify-center mx-2 md:hidden ' onClick={()=>setIsopen(!isOpen)}>{<IoMdClose/>}</button>
                 </div>
                 <div className='flex justify-center  items-center mt-4 w-full'>
                     <ul className='w-full'>
