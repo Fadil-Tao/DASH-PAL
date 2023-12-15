@@ -1,0 +1,18 @@
+[
+    {
+      "label": "Grocery",
+      "value": 32
+    },
+    {
+      "label": "Vegetables",
+      "value": 45
+    },
+    {
+      "label": "Fruits",
+      "value": 23
+    },
+    {
+      "label": "Other",
+      "value": 9
+    }
+]
