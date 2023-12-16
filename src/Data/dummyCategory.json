@@ -1,18 +1,30 @@
 [
     {
       "label": "Grocery",
-      "value": 32
+      "value": 38
     },
     {
       "label": "Vegetables",
-      "value": 45
+      "value": 42
     },
     {
       "label": "Fruits",
-      "value": 23
+      "value": 21
+    },
+    {
+      "label": "Clothes",
+      "value": 29
+    },
+    {
+      "label": "Elctronics",
+      "value": 31
+    },
+    {
+      "label": "Bike",
+      "value": 39
     },
     {
       "label": "Other",
-      "value": 9
+      "value": 12
     }
 ]

@@ -1,0 +1,44 @@
+[
+    {
+        "name": "Alex",
+        "avatar": "https://reqres.in/img/faces/1-image.jpg",
+        "email": "alex@dashwind.com",
+        "location": "Paris",
+        "role": "Software Developer"
+    },
+    {
+        "name": "Ereena",
+        "avatar": "https://reqres.in/img/faces/2-image.jpg",
+        "email": "ereena@dashwind.com",
+        "location": "London",
+        "role": "Software Engineer"
+    },
+    {
+        "name": "John",
+        "avatar": "https://reqres.in/img/faces/3-image.jpg",
+        "email": "jhon@dashwind.com",
+        "location": "Canada",
+        "role": "Frontend Developer"
+    },
+    {
+        "name": "Matrix",
+        "avatar": "https://reqres.in/img/faces/4-image.jpg",
+        "email": "matrix@dashwind.com",
+        "location": "Peru",
+        "role": "Backend Developer"
+    },
+    {
+        "name": "Virat",
+        "avatar": "https://reqres.in/img/faces/5-image.jpg",
+        "email": "virat@dashwind.com",
+        "location": "London",
+        "role": "Full Stack Developer"
+    },
+    {
+        "name": "Miya",
+        "avatar": "https://reqres.in/img/faces/6-image.jpg",
+        "email": "miya@dashwind.com",
+        "location": "Paris",
+        "role": "DevOps Engineer"
+    }
+]
