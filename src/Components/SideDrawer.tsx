@@ -7,7 +7,7 @@ import { GrAnalytics } from 'react-icons/gr';
 import { IoMdClose } from "react-icons/io";
 import { useContext } from 'react';
 import { isOpenContext } from '../Pages/RootLayout';
-
+import { FaUsers } from "react-icons/fa";
 
 type menuType = {
     title: string;
@@ -29,6 +29,11 @@ const menus: menuType[] = [
         title: 'Transaction',
         link: '/transaction',
         icon: <GrTransaction />,
+    },
+    {
+        title:'Users',
+        link:'/Users',
+        icon:<FaUsers/>
     },
     {
         title: 'Account',

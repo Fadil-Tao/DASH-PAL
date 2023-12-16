@@ -38,6 +38,10 @@ const router = createBrowserRouter([
       {
         path:'/product',
         element:<ProductPage/>
+      },
+      {
+        path:'/users',
+        element: <div>Placeholder</div>
       }
     ]
   }
