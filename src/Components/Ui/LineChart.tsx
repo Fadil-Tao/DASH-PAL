@@ -15,7 +15,7 @@ const LineChart = () => {
     const data: dataValue[] = dummyRevenue;
 
     return (
-        <div className='md:w-[600px] md:h-[346px] p-3 rounded-lg bg-[#121212] mx-4 '>
+        <div className='w-full h-full  '>
             <Chart
                 type='line'
                 data={{
@@ -45,7 +45,7 @@ const LineChart = () => {
                         point: {
                             pointStyle: 'circle',
                             borderWidth: 1,
-                            radius: 1,
+                            radius: 2,
                         },
                     },
                     plugins: {
