@@ -10,7 +10,7 @@ const RootLayout = () => {
     const [isOpen,setIsopen] = useState<boolean | void>(false);
     return (
         <isOpenContext.Provider value={{isOpen, setIsopen}}  >
-            <div className='flex min-h-screen  max-w-screen'>
+            <div className='flex md:min-h-screen  md:max-w-screen'>
                 <SideDrawer />
                 <div className='w-full'>
                     <Header />

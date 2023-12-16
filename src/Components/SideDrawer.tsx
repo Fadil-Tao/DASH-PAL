@@ -40,13 +40,13 @@ const menus: menuType[] = [
         link: '/reports',
         icon: <GrAnalytics />,
     },
-];
+]; 
 
 const SideDrawer = () => {
     const {isOpen,setIsopen} = useContext(isOpenContext)
 
     return (
-        <div className={`bg-black md:static absolute text-white min-h-screen w-36 lg:w-48 md:flex transition-all duration-500 ease-in-out ${isOpen ? 'left-0' : '-left-36'} `}>
+        <div className={`bg-black md:static fixed  min-h-screen text-white md:min-h-screen  w-36 lg:w-48 md:flex transition-all duration-500 ease-in-out ${isOpen ? 'left-0' : '-left-36'} `} >
             <div className='pt-4 h-full'>
                 <div className='flex justify-between items-center '>
                     <h1 className='font-bold md:text-base  text-sm'>

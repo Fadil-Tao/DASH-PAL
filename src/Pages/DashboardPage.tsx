@@ -5,6 +5,8 @@ import { FaUserTag } from "react-icons/fa";
 import { IoStatsChart } from "react-icons/io5";
 import LineChart from '../Components/Ui/LineChart';
 import DoughnutChart from '../Components/Ui/DoughnutChart';
+import RadarChart from '../Components/Ui/RadarChart';
+import MiniTeamsTable from '../Components/Ui/MiniTeamsTable';
 
 const DashboardPage = () => {
     return (
@@ -34,18 +36,27 @@ const DashboardPage = () => {
                 <OverviewCard title='Total Revenue' total={2000} icon={<IoStatsChart color={'#FC3884'}/>}  color='text-[#FC3884]'/>
             </div>
 
-                <div>{}</div>
             {/* charts container  */}
-            <div className='flex md:flex-row flex-col'>
-                <div >
+            <div className='flex md:flex-row flex-col mt-1'>
+                <div className='md:w-[600px] md:h-[346px] p-3 rounded-lg bg-[#121212] mx-4'>
                     <LineChart/>
                 </div>
-                <div className=''>
+                <div className='md:w-[400px] flex justify-center md:mt-0  bg-[#121212] rounded-2xl px-8 py-4 mx-4 md:h-[346px] items-center mt-4 '>
                     <DoughnutChart/>
+                </div>
+            </div>
+
+            {/* third layer container */}
+            <div className='mt-8 flex md:justify-around  flex-col md:flex-row md:h-auto h-auto mb-10 md:px-2 '>
+                <div className='  flex justify-center md:mt-0 mt-10 bg-[#121212] rounded-2xl px-10  py-4 md:mx-4 mx-[10px] mx items-center  h-full md:h-auto max-h-full w-[95%] md:w-full'>
+                    <RadarChart />
+                </div>
+                <div className='md:mt-0 mt-4  bg-[#121212] md:w-[645px] px-10 py-3 h-full rounded-xl mx-4'>
+                    <MiniTeamsTable/>
                 </div>
             </div>
         </div>
     );
-};
+}
 
 export default DashboardPage;
