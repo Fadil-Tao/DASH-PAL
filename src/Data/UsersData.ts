@@ -1,22 +1,23 @@
 import {faker} from '@faker-js/faker';
 
-type PersonType = {
+export interface PersonType {
     image:string
-    firstname:string
-    lastname:string
+    fullName:string
     email:string
-    status:boolean
-    count:number
+    status:boolean | string
+    action?:any
+    uuid:string
 }
+
+
 
 export const  createRandomUser= ():PersonType => {
     return {
         image: faker.internet.avatar(),
         email: faker.internet.email(),
-        firstname: faker.person.firstName(),
-        lastname:faker.person.lastName(),
+        fullName: faker.person.fullName(),
         status:faker.datatype.boolean(),
-        count:faker.number.int({ min: 100, max: 200 })
+        uuid:faker.string.uuid()
     }
 }
 
