@@ -26,11 +26,6 @@ const menus: menuType[] = [
         icon: <MdOutlineProductionQuantityLimits />,
     },
     {
-        title: 'Transaction',
-        link: '/transaction',
-        icon: <GrTransaction />,
-    },
-    {
         title:'Users',
         link:'/Users',
         icon:<FaUsers/>

@@ -6,8 +6,8 @@ import RootLayout from './Pages/RootLayout.tsx';
 import DashboardPage from './Pages/DashboardPage.tsx';
 import ReportsPage from './Pages/ReportsPage.tsx';
 import AccountPage from './Pages/Acounts.tsx';
-import TransactionsPage from './Pages/TransactionPage.tsx';
 import ProductPage from './Pages/Product.tsx';
+import UsersPage from './Pages/UsersPage.tsx';
 
 
 const router = createBrowserRouter([
@@ -32,16 +32,12 @@ const router = createBrowserRouter([
         element:<AccountPage/>
       },
       {
-        path:'/transaction',
-        element:<TransactionsPage/>
-      },
-      {
         path:'/product',
         element:<ProductPage/>
       },
       {
         path:'/users',
-        element: <div>Placeholder</div>
+        element: <UsersPage/>
       }
     ]
   }
