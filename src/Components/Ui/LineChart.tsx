@@ -2,20 +2,21 @@ import 'chart.js/auto';
 import { Chart } from 'react-chartjs-2';
 import dummyRevenue from '../../Data/dummyRevenue.json';
 import { defaults } from 'chart.js';
-interface dataValue {
-    label: string;
-    income: number;
-    expense: number;
-}
+import { ChartDataValue, chartProps } from '../../types/types';
+
+
+
 
 defaults.maintainAspectRatio = false;
 defaults.responsive = true;
 
-const LineChart = () => {
-    const data: dataValue[] = dummyRevenue;
+
+
+const LineChart = ({title}:chartProps) => {
+    const data: ChartDataValue[] = dummyRevenue;
 
     return (
-        <div className='w-full h-full  '>
+        <div className='w-full h-full  px-10 py-5'>
             <Chart
                 type='line'
                 data={{
@@ -51,7 +52,7 @@ const LineChart = () => {
                     plugins: {
                         title: {
                             display: true,
-                            text: 'Revenue Overview',
+                            text: title,
                             align:"start",
                             color:"#FEFEFE",
                             font:{

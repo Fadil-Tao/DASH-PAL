@@ -1,13 +1,13 @@
 import { Chart } from 'react-chartjs-2';
 import dummyCountryData from '../../Data/dummyCountryData.json';
+import { DummyCountryValue, chartProps } from '../../types/types';
 
-interface CountryValue {
-    label: string;
-    value: number;
-}
 
-const DoughnutChart = () => {
-    const data: CountryValue[] = dummyCountryData;
+
+
+
+const DoughnutChart = ({title}:chartProps) => {
+    const data: DummyCountryValue[] = dummyCountryData;
 
     return (
         <div className='w-full h-full '>
@@ -29,7 +29,7 @@ const DoughnutChart = () => {
                     plugins: {
                         title: {
                             display: true,
-                            text: 'Top Buyers Country',
+                            text: title,
                             align: 'start',
                             color: '#FEFEFE',
                             font: {

@@ -1,11 +1,9 @@
 import { Chart } from 'react-chartjs-2';
 import dummyCategory from '../../Data/dummyCategory.json';
+import { CategoryValues, chartProps } from '../../types/types';
 
-interface CategoryValues {
-    label: string;
-    value: number;
-}
-const RadarChart = () => {
+
+const RadarChart = ({title}:chartProps) => {
     const data: CategoryValues[] = dummyCategory;
 
     return (
@@ -45,7 +43,7 @@ const RadarChart = () => {
                     plugins: {
                         title: {
                             display: true,
-                            text: 'Top Categories',
+                            text: title,
                             align: 'start',
                             color: '#FEFEFE',
                             font: {
