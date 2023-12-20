@@ -1,14 +1,14 @@
-import { CgDarkMode } from 'react-icons/cg';
 import { IoIosNotifications } from 'react-icons/io';
 import { useContext } from 'react';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { isOpenContext } from '../Pages/RootLayout';
+import { BsMoonStarsFill } from "react-icons/bs";
 const Header = () => {
     const {isOpen,setIsopen} = useContext(isOpenContext);
     
    
     return (
-        <div className=' bg-black py-2 text-[34px] text-zinc-400  w-full w-max-screen h-14 justify-between flex items-center'>
+        <div className=' bg-black py-2  text-[34px] text-zinc-400  w-full w-max-screen h-14 justify-between flex items-center'>
             <div className='flex items-center justify-center ml-4'>
                 <button
                     className={`bg-orange-500 rounded-md p-1  items-center justify-center mx-2 md:hidden text-white ${isOpen? '-left-36':'left-0'}`}
@@ -16,8 +16,8 @@ const Header = () => {
                 >
                     {<GiHamburgerMenu />}
                 </button>
-                <div className='mx-5'>
-                    <CgDarkMode />
+                <div className='mx-5' >
+                    <BsMoonStarsFill />
                 </div>
             </div>
             <div className='flex ml-12'>
