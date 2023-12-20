@@ -67,7 +67,7 @@ const MyTable = () => {
         },
     ];
     return (
-        <div className='p-2 overflow-x-auto rounded-t-xl max-w-5xl mx-auto text-white fill-gray-400 border border-amber-600 my-10'>
+        <div className='p-2 overflow-x-auto rounded-xl max-w-5xl mx-auto text-white fill-gray-400 border border-amber-600 my-10'>
             <div className='flex justify-between mb-2'>
                 <div className='w-full flex items-center gap-1'>
                     <DebouncedInput
