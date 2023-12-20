@@ -1,5 +1,13 @@
-const AccountPage = () =>{
-    return <div> Hello Account</div>
-}
+import ProfileBanner from '../Components/ProfileBanner';
+import ProfileForm from '../Components/ProfileForm';
 
-export default AccountPage
+const AccountPage = () => {
+    return (
+        <div className='text-white'>
+            <ProfileBanner />
+            <ProfileForm />
+        </div>
+    );
+};
+
+export default AccountPage;
