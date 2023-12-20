@@ -22,7 +22,7 @@ This is a minimal and simple admin dahsboard build using react, tailwind css and
 
 
 ## Live Preview 
-coming soon
+https://dash-pal.vercel.app/
 
 ## Additional update in the future
 - cleaning some code
@@ -30,6 +30,6 @@ coming soon
 - add dark/light mode 
 
 ## Feedback
-any feedback, comments , criticism even judges are welcome send it to here mothra09876@gmail.com
+any feedback, comments , criticism even judges are welcomed, send it to here mothra09876@gmail.com
 
 
