@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+# Dashboard Pal 
+## An admin dashboard t
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a minimal and simple admin dahsboard build using react, tailwind css and typescript. 
 
-Currently, two official plugins are available:
+## Features
+- Charts
+- Products Card 
+- Table
+- Login / Register Page
+- Profile Page
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Screenshoot
 
-## Expanding the ESLint configuration
+|                          |                               |
+:-------------------------:|:-------------------------:
+![Alt text](Screenshot/DashboardPage.png) | ![Alt text](Screenshot/ProuductsPage.png)
+![Alt text](Screenshot/UsersPage.png) | ![Alt text](Screenshot/AccountPage.png)
+![Alt text](Screenshot/ReportsPage.png) | ![Alt text](Screenshot/LoginPage.png)
+![Alt text](Screenshot/RegisterPage.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Live Preview 
+coming soon
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Additional update in the future
+- cleaning some code
+- write some comments
+- add dark/light mode 
+
+## Feedback
+any feedback, comments , criticism even judges are welcome send it to here mothra09876@gmail.com
+
+
