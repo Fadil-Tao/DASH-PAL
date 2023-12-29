@@ -19,11 +19,11 @@ const ProductCard = ({
 }: ProductValue) => {
     return (
         <div key={id} className=' bg-[#121212] w-56 h-72 rounded-[20px] px-5 m-4'>
-            <div className='flex justify-center items-center   pt-3 h-[50%] '>
+            <div className='flex justify-center items-center bg-white rounded-lg  pt-3 h-[50%] '>
                 <img
                     src={image}
                     alt='image'
-                    className='object-fit aspect-auto w-full h-full rounded-xl'
+                    className='object-contain w-full h-full '
                 />
             </div>
             <div className='mt-0 text-sm text-gray-500 '>

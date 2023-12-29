@@ -10,7 +10,7 @@ const ProfileBanner = () => {
             </div>
             <div className=' w-full h-full px-6 rounded-[20px] mt-8'>
                 <div className='relative'>
-                    <div className='bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-rose-900 via-amber-800 to-rose-400 to-black border-8 border-zinc-900 w-full rounded-[20px] h-48 '>
+                    <div className='z-10 bg-[conic-gradient(at_left,_var(--tw-gradient-stops))] from-rose-900 via-amber-800 to-rose-400 to-black border-8 border-zinc-900 w-full rounded-[20px] h-48 '>
                         <div className='h-40 w-40 absolute bottom-[-60px]   left-1/2 transform -translate-x-1/2 border-8 border-zinc-900  rounded-full'>
                             <img
                                 src='https://loremflickr.com/640/360'

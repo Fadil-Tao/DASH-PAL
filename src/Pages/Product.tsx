@@ -57,9 +57,6 @@ const ProductPage = () => {
             <div className='flex justify-start lg:px-10 items-center mt-7'>
                 <h1 className='text-white font-bold text-2xl'> Prouducts</h1>
             </div>
-            <div className='mt-20'>
-                Filter
-            </div>
             <div className='flex '>
                 <ul className='flex justify-center flex-wrap'>
                     {data.map((item, key) => {

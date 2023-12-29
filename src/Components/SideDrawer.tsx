@@ -60,7 +60,7 @@ const SideDrawer = () => {
 
     return (
         <div
-            className={`bg-black md:static fixed  min-h-screen text-white md:min-h-screen  w-36 lg:w-48 md:flex transition-all duration-500 ease-in-out ${
+            className={`bg-black md:static fixed  min-h-screen text-white md:min-h-screen  z-20 w-36 lg:w-48 md:flex transition-all duration-500 ease-in-out ${
                 isOpen ? 'left-0' : '-left-36'
             } `}
         >
